@@ -31,4 +31,7 @@
 
       </div>
   </body>
+  <footer>
+    &copy;
+  </footer>
 </html>
