@@ -4,7 +4,7 @@
 <div style="background-image: url('<?php if ( has_post_thumbnail() ) { the_post_thumbnail_url(); } ?>');" class="tumbnail_image" ></div>
 <?php if ( !is_search() ) get_template_part( 'entry', 'meta' ); ?>
 </header>
-<?php get_template_part( 'entry', ( is_archive() || is_search() ? 'summary' : 'content' ) ); ?>
-<?php if ( !is_search() ) get_template_part( 'entry-footer' ); ?>
+<?php  ?>
+<?php get_template_part( 'entry', 'content'  ); ?>
 <hr>
 </article>
