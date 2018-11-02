@@ -6,5 +6,4 @@
 </header>
 <?php  ?>
 <?php get_template_part( 'entry', 'content'  ); ?>
-<hr>
 </article>

@@ -22,6 +22,13 @@ $(document).ready(
         $("#akt_menue_deakt").toggle();
       }
     );
+
+    $("#post-Events .post_conten_block").click(
+      function()
+      {
+        $(this).toggleClass("event_hidden");
+      }
+    );
   }
 );
 
@@ -66,15 +73,24 @@ function aktualisireevents()
       if (parseInt(event_dates_string[1])<date.getMonth()||parseInt(event_dates_string[0])<date.getDate()&&parseInt(event_dates_string[1])==date.getMonth()||parseInt(event_dates_string[2])<date.getFullYear())
       {
         $("#post-Events .post_conten_block").eq(id_aktualisireevents).css("display","none");
-        vegangeneevents = vegangeneevents+$("#post-Events .post_conten_block").eq(id_aktualisireevents).html();
+        vegangeneevents = vegangeneevents+"<div class='post_conten_block'>"+$("#post-Events .post_conten_block").eq(id_aktualisireevents).html()+"</div>";
       }
+
       id_aktualisireevents ++;
     }
   );
 
   if (vegangeneevents!="")
   {
-    $("#post-Events").append("<div id='vergangeevents'>"+vegangeneevents+"</div><hr>");
+    $("#post-Events").append("<hr><div id='vergangeevents'>"+vegangeneevents+"</div>");
   }
 
+  verstekeevents();
+
+}
+
+function verstekeevents()
+{
+  $("#post-Events .post_conten_block").addClass("event_hidden");
+  $("#post-Events .post_conten_block").eq(0).removeClass("event_hidden");
 }
