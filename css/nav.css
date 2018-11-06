@@ -97,6 +97,7 @@ nav .akt_menu {
     border: none;
     width: 20vw;
     height: 20vw;
+    background: rgba(255, 255, 255, 0.2);
   }
 
   .hideNavigation {

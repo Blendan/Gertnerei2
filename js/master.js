@@ -74,6 +74,7 @@ function aktualisireevents()
       {
         $("#post-Events .post_conten_block").eq(id_aktualisireevents).css("display","none");
         vegangeneevents = vegangeneevents+"<div class='post_conten_block'>"+$("#post-Events .post_conten_block").eq(id_aktualisireevents).html()+"</div>";
+        $("#post-Events .post_conten_block").eq(id_aktualisireevents).removeClass("post_conten_block");
       }
 
       id_aktualisireevents ++;

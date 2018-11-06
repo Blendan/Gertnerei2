@@ -65,10 +65,10 @@ hr {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  height: 70%;
+  height: 90%;
   overflow: hidden;
 
-  margin-top: 100px;
+  margin-top: 2.5%;
 }
 
 #home h1 {
@@ -100,6 +100,10 @@ hr {
   .tumbnail_image {
     width: 100%;
     height: 500px;
+  }
+
+  #home {
+    margin-top: 0;
   }
 }
 
